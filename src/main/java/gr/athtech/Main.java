@@ -1,7 +1,11 @@
 package gr.athtech;
 
+import gr.athtech.bank.CurrencyServiceImpl;
+import jakarta.xml.ws.Endpoint;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        Endpoint.publish("http://localhost:8080/currencyservice", new CurrencyServiceImpl());
     }
 }
