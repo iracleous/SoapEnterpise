@@ -9,3 +9,6 @@ A typical client is recommended soapUI-5.7.0.
 If postman is used the requests should be POST, the body XML, and the header Content-Type = text/xml
 
 Uses the jakarta.jakartaee-api v.10.0.0
+
+
+Produced for AthTech educational purposes, March 2023
