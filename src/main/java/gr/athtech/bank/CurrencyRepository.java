@@ -6,7 +6,7 @@ import java.util.Optional;
 
 public class CurrencyRepository {
 
-    private static List<Currency> currencyList = new ArrayList<>();
+    private static final  List<Currency> currencyList = new ArrayList<>();
     private static int currencyCount = 0;
     static {
         currencyList.add(new Currency(1,"Indian Rupee","Rs","INR"));
@@ -15,14 +15,18 @@ public class CurrencyRepository {
         currencyList.add(new Currency(4, "Australian Dollar","$","AUD"));
     }
     public Currency findByCode(String code) {
-        Optional<Currency> currencyOptional = currencyList.stream()
-                .filter(matchId-> code .equals(matchId.getCode())).findAny();
+
+        Optional<Currency> currencyOptional = currencyList
+                .stream()
+                .filter(element -> code.equals(element.getCode()))
+                .findAny();
         if(currencyOptional.isPresent())
             return currencyOptional.get();
         return null;
     }
     public Currency findById(int id) {
-        Optional<Currency> currencyOptional = currencyList.stream().filter(matchId->matchId.getId()==id).findAny();
+        Optional<Currency> currencyOptional = currencyList.stream()
+                .filter(matchId->matchId.getId()==id).findAny();
         if(currencyOptional.isPresent())
             return currencyOptional.get();
         return null;
