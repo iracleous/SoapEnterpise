@@ -8,7 +8,7 @@ public class CurrencyRepository {
 
     private static final  List<Currency> currencyList = new ArrayList<>();
     private static int currencyCount = 0;
-    static {
+    static { 
         currencyList.add(new Currency(1,"Indian Rupee","Rs","INR"));
         currencyList.add(new Currency(2,"American Dollar","$","USD"));
         currencyList.add(new Currency(3,"Canadian Dollar","$","CAD"));
