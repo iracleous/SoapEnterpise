@@ -1,5 +1,6 @@
-package gr.athtech.bank;
+package gr.athtech.bank.repositories;
 
+import gr.athtech.bank.models.Currency;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;

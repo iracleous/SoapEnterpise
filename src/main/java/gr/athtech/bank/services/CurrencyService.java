@@ -1,5 +1,6 @@
-package gr.athtech.bank;
+package gr.athtech.bank.services;
 
+import gr.athtech.bank.models.Currency;
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebService;
 

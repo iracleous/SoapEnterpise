@@ -13,7 +13,7 @@
         <maven.compiler.target>22</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>5.9.1</junit.version>
- <exec.mainClass>gr.athtech.Main</exec.mainClass>
+ <exec.mainClass>gr.athtech.bank.Main</exec.mainClass>
     </properties>
 
 <dependencies>

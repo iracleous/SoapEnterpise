@@ -1,6 +1,6 @@
-package gr.athtech;
+package gr.athtech.bank;
 
-import gr.athtech.bank.CurrencyServiceImpl;
+import gr.athtech.bank.services.CurrencyServiceImpl;
 import jakarta.xml.ws.Endpoint;
 
 public class Main {

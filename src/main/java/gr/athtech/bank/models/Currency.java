@@ -1,4 +1,4 @@
-package gr.athtech.bank;
+package gr.athtech.bank.models;
 
 
 import lombok.AllArgsConstructor;
