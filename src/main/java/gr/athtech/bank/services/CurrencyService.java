@@ -9,17 +9,17 @@ import java.util.List;
 @WebService
 public interface CurrencyService {
     @WebMethod
-    public Currency getCurrencyById(int id);
+    Currency getCurrencyById(int id);
 
     @WebMethod
-    public Currency findByCode(String code);
+    Currency findByCode(String code);
 
     @WebMethod
-    public List<Currency> getAllCurrencies();
+    List<Currency> getAllCurrencies();
 
     @WebMethod
-    public Currency save(Currency currency);
+    Currency save(Currency currency);
 
     @WebMethod
-    public Currency deleteById(int id);
+    Currency deleteById(int id);
 }

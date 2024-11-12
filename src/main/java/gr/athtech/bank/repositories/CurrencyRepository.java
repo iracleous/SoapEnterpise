@@ -14,6 +14,7 @@ public class CurrencyRepository {
         currencyList.add(new Currency(2,"American Dollar","$","USD"));
         currencyList.add(new Currency(3,"Canadian Dollar","$","CAD"));
         currencyList.add(new Currency(4, "Australian Dollar","$","AUD"));
+        currencyList.add(new Currency(5, "Euro","E","EUR"));
     }
     public Currency findByCode(String code) {
 
